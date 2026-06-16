@@ -5,29 +5,42 @@ project(EmbeddedFramework C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(health_monitor
+
+    # Application
     apps/health_monitor/main.c
 
-    platform/linux/platform_linux.c
+    # Core
+    core/module_manager/module_manager.c
 
-    osal/posix/osal_posix.c
-
-    services/logger/logger.c
-
+    # Modules
     modules/lipo_battery/lipo_battery.c
 
-    core/module_manager/module_manager.c
+    # Services
+    services/logger/logger.c
+
+    # Platform
+    platform/linux/platform_linux.c
+
+    # OSAL
+    osal/posix/osal_posix.c
 )
 
-
 target_include_directories(health_monitor PRIVATE
+
+    # Core
+    core/module_manager
+
+    # Modules
+    modules/lipo_battery
+
+    # Services
+    services/logger
+
+    # Platform
     platform
     platform/linux
 
+    # OSAL
     osal
-
-    services/logger
-
-    modules/lipo_battery
-
-    core/module_manager
+    osal/posix
 )

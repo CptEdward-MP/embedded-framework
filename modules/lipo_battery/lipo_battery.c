@@ -1,44 +1,74 @@
 #include "lipo_battery.h"
+
 #include "logger.h"
 #include "platform.h"
 
-static lipo_battery_config_t lipo_cfg;
-static lipo_battery_data_t lipo_data;
 
-void LipoBattery_Configure(uint8_t cell_count,
-                           uint8_t adc_channel)
+
+/* Configure battery instance */
+void LipoBattery_Configure(
+    lipo_battery_t *battery,
+    uint8_t cell_count,
+    uint8_t adc_channel)
 {
-    lipo_cfg.cell_count = cell_count;
-    lipo_cfg.adc_channel = adc_channel;
+    battery->config.cell_count = cell_count;
+
+    battery->config.adc_channel = adc_channel;
 }
 
-void LipoBattery_Init(void)
+/* Initialize battery instance */
+void LipoBattery_Init(
+    lipo_battery_t *battery)
 {
+    (void)battery;
+
     Log_Info("LiPo Battery Initialized");
 }
 
-lipo_battery_data_t LipoBattery_GetData(void)
+/* Get latest battery data */
+lipo_battery_data_t LipoBattery_GetData(
+    const lipo_battery_t *battery)
 {
-    return lipo_data;
+    return battery->data;
 }
 
-void LipoBattery_Update(void)
+/* Update battery measurements */
+void LipoBattery_Update(
+    lipo_battery_t *battery)
 {
-    if (lipo_cfg.cell_count == 0)
+    if (battery->config.cell_count == 0)
     {
         Log_Error("LiPo Battery Not Configured");
+
         return;
     }
 
-    lipo_data.voltage =
-        Platform_ADC_Read(lipo_cfg.adc_channel);
+    battery->data.voltage =
+        Platform_ADC_Read(
+            battery->config.adc_channel);
 
-    lipo_data.cell_voltage =
-        lipo_data.voltage /
-        lipo_cfg.cell_count;
+    battery->data.cell_voltage =
+        battery->data.voltage /
+        battery->config.cell_count;
 
-    if (lipo_data.cell_voltage < 3.7f)
+    if (battery->data.cell_voltage < 3.7f)
     {
         Log_Error("LiPo Battery Low");
     }
+}
+
+/* Module init adapter */
+void LipoBattery_ModuleInit(
+    void *context)
+{
+    LipoBattery_Init(
+        (lipo_battery_t *)context);
+}
+
+/* Module update adapter */
+void LipoBattery_ModuleUpdate(
+    void *context)
+{
+    LipoBattery_Update(
+        (lipo_battery_t *)context);
 }

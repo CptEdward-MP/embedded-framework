@@ -1,7 +1,6 @@
 CMakeFiles/health_monitor.dir/apps/health_monitor/main.c.o: \
  /home/anansh_andey/workspace/embedded-framework/apps/health_monitor/main.c \
  /usr/include/stdc-predef.h \
- /home/anansh_andey/workspace/embedded-framework/platform/linux/platform_linux.h \
  /home/anansh_andey/workspace/embedded-framework/platform/platform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -21,4 +20,7 @@ CMakeFiles/health_monitor.dir/apps/health_monitor/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /home/anansh_andey/workspace/embedded-framework/osal/osal.h \
  /home/anansh_andey/workspace/embedded-framework/services/logger/logger.h \
- /home/anansh_andey/workspace/embedded-framework/modules/lipo_battery/lipo_battery.h
+ /home/anansh_andey/workspace/embedded-framework/modules/lipo_battery/lipo_battery.h \
+ /home/anansh_andey/workspace/embedded-framework/core/module_manager/module.h \
+ /home/anansh_andey/workspace/embedded-framework/core/module_manager/module_manager.h \
+ /home/anansh_andey/workspace/embedded-framework/core/module_manager/module.h

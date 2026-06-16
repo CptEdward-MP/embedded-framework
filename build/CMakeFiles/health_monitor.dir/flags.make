@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/anansh_andey/workspace/embedded-framework/platform -I/home/anansh_andey/workspace/embedded-framework/platform/linux -I/home/anansh_andey/workspace/embedded-framework/osal -I/home/anansh_andey/workspace/embedded-framework/services/logger -I/home/anansh_andey/workspace/embedded-framework/modules/lipo_battery -I/home/anansh_andey/workspace/embedded-framework/core/module_manager
+C_INCLUDES = -I/home/anansh_andey/workspace/embedded-framework/core/module_manager -I/home/anansh_andey/workspace/embedded-framework/modules/lipo_battery -I/home/anansh_andey/workspace/embedded-framework/services/logger -I/home/anansh_andey/workspace/embedded-framework/platform -I/home/anansh_andey/workspace/embedded-framework/platform/linux -I/home/anansh_andey/workspace/embedded-framework/osal -I/home/anansh_andey/workspace/embedded-framework/osal/posix
 
 C_FLAGS = -std=gnu99
 

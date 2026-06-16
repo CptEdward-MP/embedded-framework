@@ -2,7 +2,9 @@
 #define LIPO_BATTERY_H
 
 #include <stdint.h>
+#include "module.h"
 
+/* Battery configuration */
 typedef struct
 {
     uint8_t cell_count;
@@ -11,20 +13,48 @@ typedef struct
 
 } lipo_battery_config_t;
 
+/* Battery measurements */
 typedef struct
 {
     float voltage;
+
     float cell_voltage;
 
 } lipo_battery_data_t;
 
-void LipoBattery_Configure(uint8_t cell_count,
-                           uint8_t adc_channel);
+/* Battery instance */
+typedef struct
+{
+    lipo_battery_config_t config;
 
-void LipoBattery_Init(void);
+    lipo_battery_data_t data;
 
-void LipoBattery_Update(void);
+} lipo_battery_t;
 
-lipo_battery_data_t LipoBattery_GetData(void);
+/* Configure battery instance */
+void LipoBattery_Configure(
+    lipo_battery_t *battery,
+    uint8_t cell_count,
+    uint8_t adc_channel);
+
+/* Initialize battery instance */
+void LipoBattery_Init(
+    lipo_battery_t *battery);
+
+/* Update battery measurements */
+void LipoBattery_Update(
+    lipo_battery_t *battery);
+
+/* Get latest battery data */
+lipo_battery_data_t LipoBattery_GetData(
+    const lipo_battery_t *battery);
+
+/* Module init adapter */
+void LipoBattery_ModuleInit(
+    void *context);
+
+/* Module update adapter */
+void LipoBattery_ModuleUpdate(
+    void *context);
 
 #endif /* LIPO_BATTERY_H */

@@ -83,33 +83,33 @@ CMakeFiles/health_monitor.dir/apps/health_monitor/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/health_monitor.dir/apps/health_monitor/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anansh_andey/workspace/embedded-framework/apps/health_monitor/main.c -o CMakeFiles/health_monitor.dir/apps/health_monitor/main.c.s
 
-CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o: CMakeFiles/health_monitor.dir/flags.make
-CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o: /home/anansh_andey/workspace/embedded-framework/platform/linux/platform_linux.c
-CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o: CMakeFiles/health_monitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o -MF CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o.d -o CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o -c /home/anansh_andey/workspace/embedded-framework/platform/linux/platform_linux.c
+CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o: CMakeFiles/health_monitor.dir/flags.make
+CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o: /home/anansh_andey/workspace/embedded-framework/core/module_manager/module_manager.c
+CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o: CMakeFiles/health_monitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o -MF CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o.d -o CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o -c /home/anansh_andey/workspace/embedded-framework/core/module_manager/module_manager.c
 
-CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anansh_andey/workspace/embedded-framework/platform/linux/platform_linux.c > CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.i
+CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anansh_andey/workspace/embedded-framework/core/module_manager/module_manager.c > CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.i
 
-CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anansh_andey/workspace/embedded-framework/platform/linux/platform_linux.c -o CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.s
+CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anansh_andey/workspace/embedded-framework/core/module_manager/module_manager.c -o CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.s
 
-CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o: CMakeFiles/health_monitor.dir/flags.make
-CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o: /home/anansh_andey/workspace/embedded-framework/osal/posix/osal_posix.c
-CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o: CMakeFiles/health_monitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o -MF CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o.d -o CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o -c /home/anansh_andey/workspace/embedded-framework/osal/posix/osal_posix.c
+CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o: CMakeFiles/health_monitor.dir/flags.make
+CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o: /home/anansh_andey/workspace/embedded-framework/modules/lipo_battery/lipo_battery.c
+CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o: CMakeFiles/health_monitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o -MF CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o.d -o CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o -c /home/anansh_andey/workspace/embedded-framework/modules/lipo_battery/lipo_battery.c
 
-CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anansh_andey/workspace/embedded-framework/osal/posix/osal_posix.c > CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.i
+CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anansh_andey/workspace/embedded-framework/modules/lipo_battery/lipo_battery.c > CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.i
 
-CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anansh_andey/workspace/embedded-framework/osal/posix/osal_posix.c -o CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.s
+CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anansh_andey/workspace/embedded-framework/modules/lipo_battery/lipo_battery.c -o CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.s
 
 CMakeFiles/health_monitor.dir/services/logger/logger.c.o: CMakeFiles/health_monitor.dir/flags.make
 CMakeFiles/health_monitor.dir/services/logger/logger.c.o: /home/anansh_andey/workspace/embedded-framework/services/logger/logger.c
@@ -125,52 +125,52 @@ CMakeFiles/health_monitor.dir/services/logger/logger.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/health_monitor.dir/services/logger/logger.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anansh_andey/workspace/embedded-framework/services/logger/logger.c -o CMakeFiles/health_monitor.dir/services/logger/logger.c.s
 
-CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o: CMakeFiles/health_monitor.dir/flags.make
-CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o: /home/anansh_andey/workspace/embedded-framework/modules/lipo_battery/lipo_battery.c
-CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o: CMakeFiles/health_monitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o -MF CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o.d -o CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o -c /home/anansh_andey/workspace/embedded-framework/modules/lipo_battery/lipo_battery.c
+CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o: CMakeFiles/health_monitor.dir/flags.make
+CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o: /home/anansh_andey/workspace/embedded-framework/platform/linux/platform_linux.c
+CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o: CMakeFiles/health_monitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o -MF CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o.d -o CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o -c /home/anansh_andey/workspace/embedded-framework/platform/linux/platform_linux.c
 
-CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anansh_andey/workspace/embedded-framework/modules/lipo_battery/lipo_battery.c > CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.i
+CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anansh_andey/workspace/embedded-framework/platform/linux/platform_linux.c > CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.i
 
-CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anansh_andey/workspace/embedded-framework/modules/lipo_battery/lipo_battery.c -o CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.s
+CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anansh_andey/workspace/embedded-framework/platform/linux/platform_linux.c -o CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.s
 
-CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o: CMakeFiles/health_monitor.dir/flags.make
-CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o: /home/anansh_andey/workspace/embedded-framework/core/module_manager/module_manager.c
-CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o: CMakeFiles/health_monitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o -MF CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o.d -o CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o -c /home/anansh_andey/workspace/embedded-framework/core/module_manager/module_manager.c
+CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o: CMakeFiles/health_monitor.dir/flags.make
+CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o: /home/anansh_andey/workspace/embedded-framework/osal/posix/osal_posix.c
+CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o: CMakeFiles/health_monitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o -MF CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o.d -o CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o -c /home/anansh_andey/workspace/embedded-framework/osal/posix/osal_posix.c
 
-CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anansh_andey/workspace/embedded-framework/core/module_manager/module_manager.c > CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.i
+CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anansh_andey/workspace/embedded-framework/osal/posix/osal_posix.c > CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.i
 
-CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anansh_andey/workspace/embedded-framework/core/module_manager/module_manager.c -o CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.s
+CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anansh_andey/workspace/embedded-framework/osal/posix/osal_posix.c -o CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.s
 
 # Object files for target health_monitor
 health_monitor_OBJECTS = \
 "CMakeFiles/health_monitor.dir/apps/health_monitor/main.c.o" \
-"CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o" \
-"CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o" \
-"CMakeFiles/health_monitor.dir/services/logger/logger.c.o" \
+"CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o" \
 "CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o" \
-"CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o"
+"CMakeFiles/health_monitor.dir/services/logger/logger.c.o" \
+"CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o" \
+"CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o"
 
 # External object files for target health_monitor
 health_monitor_EXTERNAL_OBJECTS =
 
 health_monitor: CMakeFiles/health_monitor.dir/apps/health_monitor/main.c.o
+health_monitor: CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o
+health_monitor: CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o
+health_monitor: CMakeFiles/health_monitor.dir/services/logger/logger.c.o
 health_monitor: CMakeFiles/health_monitor.dir/platform/linux/platform_linux.c.o
 health_monitor: CMakeFiles/health_monitor.dir/osal/posix/osal_posix.c.o
-health_monitor: CMakeFiles/health_monitor.dir/services/logger/logger.c.o
-health_monitor: CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o
-health_monitor: CMakeFiles/health_monitor.dir/core/module_manager/module_manager.c.o
 health_monitor: CMakeFiles/health_monitor.dir/build.make
 health_monitor: CMakeFiles/health_monitor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable health_monitor"

@@ -18,5 +18,6 @@ CMakeFiles/health_monitor.dir/modules/lipo_battery/lipo_battery.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /home/anansh_andey/workspace/embedded-framework/core/module_manager/module.h \
  /home/anansh_andey/workspace/embedded-framework/services/logger/logger.h \
  /home/anansh_andey/workspace/embedded-framework/platform/platform.h

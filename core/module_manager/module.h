@@ -1,12 +1,18 @@
 #ifndef MODULE_H
 #define MODULE_H
 
+/* Framework module instance */
 typedef struct
 {
     const char *name;
 
-    void (*init)(void);
-    void (*update)(void);
+    void *context;
+
+    void (*init)(
+        void *context);
+
+    void (*update)(
+        void *context);
 
 } module_t;
 
