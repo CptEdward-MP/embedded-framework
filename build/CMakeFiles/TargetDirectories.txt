@@ -1,0 +1,3 @@
+/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles/health_monitor.dir
+/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles/edit_cache.dir
+/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles/rebuild_cache.dir
