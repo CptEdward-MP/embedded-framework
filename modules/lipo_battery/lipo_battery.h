@@ -4,6 +4,19 @@
 #include <stdint.h>
 #include "module.h"
 
+typedef enum
+{
+    LIPO_STATUS_OK,
+
+    LIPO_STATUS_WARNING,
+
+    LIPO_STATUS_LOW,
+
+    LIPO_STATUS_CRITICAL
+
+} lipo_battery_status_t;
+
+
 /* Battery configuration */
 typedef struct
 {
@@ -19,6 +32,8 @@ typedef struct
     float voltage;
 
     float cell_voltage;
+
+    lipo_battery_status_t status;
 
 } lipo_battery_data_t;
 

@@ -51,10 +51,35 @@ void LipoBattery_Update(
         battery->data.voltage /
         battery->config.cell_count;
 
-    if (battery->data.cell_voltage < 3.7f)
-    {
-        Log_Error("LiPo Battery Low");
-    }
+if (battery->data.cell_voltage >= 3.8f)
+{
+    battery->data.status =
+        LIPO_STATUS_OK;
+}
+else if (battery->data.cell_voltage >= 3.75f)
+{
+    battery->data.status =
+        LIPO_STATUS_WARNING;
+
+    Log_Warn(
+        "LiPo Battery Warning");
+}
+else if (battery->data.cell_voltage >= 3.6f)
+{
+    battery->data.status =
+        LIPO_STATUS_LOW;
+
+    Log_Error(
+        "LiPo Battery Low");
+}
+else
+{
+    battery->data.status =
+        LIPO_STATUS_CRITICAL;
+
+    Log_Error(
+        "LiPo Battery Critical");
+}
 }
 
 /* Module init adapter */

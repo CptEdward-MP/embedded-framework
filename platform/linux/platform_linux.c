@@ -20,5 +20,5 @@ float Platform_ADC_Read(unsigned char channel)
      * Simulated 3S LiPo:
      * 10.5V total
      */
-    return 10.5f;
+    return 13.5f;
 }

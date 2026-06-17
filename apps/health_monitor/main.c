@@ -3,6 +3,7 @@
 #include "logger.h"
 #include "lipo_battery.h"
 #include "module_manager.h"
+#include <stdio.h>
 
 /* Battery instance */
 lipo_battery_t main_battery;
@@ -36,6 +37,23 @@ int main(void)
     while (1)
     {
         Module_UpdateAll();
+
+        lipo_battery_data_t data =
+    LipoBattery_GetData(
+        &main_battery);
+
+        char voltage_string[64];
+
+    
+    snprintf(
+    voltage_string,
+    sizeof(voltage_string),
+    "Battery Voltage = %.2f V",
+    data.voltage);
+
+    Log_Info(
+    voltage_string);
+
 
         OS_SleepMs(1000);
     }

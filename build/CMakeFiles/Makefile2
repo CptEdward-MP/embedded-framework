@@ -64,15 +64,32 @@ CMAKE_BINARY_DIR = /home/anansh_andey/workspace/embedded-framework/build
 
 # The main recursive "all" target.
 all: CMakeFiles/health_monitor.dir/all
+all: examples/event_basic/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: examples/event_basic/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/health_monitor.dir/clean
+clean: examples/event_basic/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory examples/event_basic
+
+# Recursive "all" directory target.
+examples/event_basic/all: examples/event_basic/CMakeFiles/event_basic.dir/all
+.PHONY : examples/event_basic/all
+
+# Recursive "preinstall" directory target.
+examples/event_basic/preinstall:
+.PHONY : examples/event_basic/preinstall
+
+# Recursive "clean" directory target.
+examples/event_basic/clean: examples/event_basic/CMakeFiles/event_basic.dir/clean
+.PHONY : examples/event_basic/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/health_monitor.dir
@@ -81,7 +98,7 @@ clean: CMakeFiles/health_monitor.dir/clean
 CMakeFiles/health_monitor.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/health_monitor.dir/build.make CMakeFiles/health_monitor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/health_monitor.dir/build.make CMakeFiles/health_monitor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target health_monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=6,7,8,9,10,11,12 "Built target health_monitor"
 .PHONY : CMakeFiles/health_monitor.dir/all
 
 # Build rule for subdir invocation for target.
@@ -99,6 +116,32 @@ health_monitor: CMakeFiles/health_monitor.dir/rule
 CMakeFiles/health_monitor.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/health_monitor.dir/build.make CMakeFiles/health_monitor.dir/clean
 .PHONY : CMakeFiles/health_monitor.dir/clean
+
+#=============================================================================
+# Target rules for target examples/event_basic/CMakeFiles/event_basic.dir
+
+# All Build rule for target.
+examples/event_basic/CMakeFiles/event_basic.dir/all:
+	$(MAKE) $(MAKESILENT) -f examples/event_basic/CMakeFiles/event_basic.dir/build.make examples/event_basic/CMakeFiles/event_basic.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/event_basic/CMakeFiles/event_basic.dir/build.make examples/event_basic/CMakeFiles/event_basic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target event_basic"
+.PHONY : examples/event_basic/CMakeFiles/event_basic.dir/all
+
+# Build rule for subdir invocation for target.
+examples/event_basic/CMakeFiles/event_basic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/event_basic/CMakeFiles/event_basic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 0
+.PHONY : examples/event_basic/CMakeFiles/event_basic.dir/rule
+
+# Convenience name for target.
+event_basic: examples/event_basic/CMakeFiles/event_basic.dir/rule
+.PHONY : event_basic
+
+# clean rule for target.
+examples/event_basic/CMakeFiles/event_basic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/event_basic/CMakeFiles/event_basic.dir/build.make examples/event_basic/CMakeFiles/event_basic.dir/clean
+.PHONY : examples/event_basic/CMakeFiles/event_basic.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -44,3 +44,6 @@ target_include_directories(health_monitor PRIVATE
     osal
     osal/posix
 )
+
+add_subdirectory(
+    examples/event_basic)

@@ -129,6 +129,19 @@ health_monitor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/health_monitor.dir/build.make CMakeFiles/health_monitor.dir/build
 .PHONY : health_monitor/fast
 
+#=============================================================================
+# Target rules for targets named event_basic
+
+# Build rule for target.
+event_basic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 event_basic
+.PHONY : event_basic
+
+# fast build rule for target.
+event_basic/fast:
+	$(MAKE) $(MAKESILENT) -f examples/event_basic/CMakeFiles/event_basic.dir/build.make examples/event_basic/CMakeFiles/event_basic.dir/build
+.PHONY : event_basic/fast
+
 apps/health_monitor/main.o: apps/health_monitor/main.c.o
 .PHONY : apps/health_monitor/main.o
 
@@ -281,6 +294,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... event_basic"
 	@echo "... health_monitor"
 	@echo "... apps/health_monitor/main.o"
 	@echo "... apps/health_monitor/main.i"

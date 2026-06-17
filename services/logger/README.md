@@ -180,3 +180,31 @@ Avoid:
 * Public APIs remain stable.
 * Prefer extension over modification.
 * Keep abstractions minimal.
+
+---
+
+## Dependencies
+
+Current dependencies:
+
+Platform Service
+
+Required platform functions:
+
+Platform_Write()
+
+
+---
+
+## Public API
+
+Current API:
+
+Log_Info()
+
+Log_Warn()
+
+Log_Error()
+
+
+---
