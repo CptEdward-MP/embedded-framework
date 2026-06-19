@@ -44,6 +44,8 @@ typedef struct
 
     lipo_battery_data_t data;
 
+    lipo_battery_status_t last_status;
+
 } lipo_battery_t;
 
 /* Configure battery instance */

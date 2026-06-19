@@ -7,5 +7,7 @@ void Platform_Write(const char *data);
 
 float Platform_ADC_Read(uint8_t channel);
 
+uint32_t Platform_Time_GetMs(void);
+
 #endif
 

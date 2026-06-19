@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/time_basic.dir/main.c.o CMakeFiles/time_basic.dir/__/__/__/services/time/time.c.o CMakeFiles/time_basic.dir/__/__/__/services/logger/logger.c.o CMakeFiles/time_basic.dir/__/__/__/platform/linux/platform_linux.c.o -o time_basic 

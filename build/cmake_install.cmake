@@ -47,6 +47,56 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/anansh_andey/workspace/embedded-framework/build/examples/event_basic/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anansh_andey/workspace/embedded-framework/build/tests/event/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anansh_andey/workspace/embedded-framework/build/examples/logger/logger_basic/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anansh_andey/workspace/embedded-framework/build/tests/logger/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anansh_andey/workspace/embedded-framework/build/examples/module_manager/module_registration/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anansh_andey/workspace/embedded-framework/build/examples/module_manager/module_context/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anansh_andey/workspace/embedded-framework/build/tests/module_manager/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anansh_andey/workspace/embedded-framework/build/examples/lipo_battery/lipo_battery_basic/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anansh_andey/workspace/embedded-framework/build/tests/lipo_battery/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anansh_andey/workspace/embedded-framework/build/examples/time/time_basic/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anansh_andey/workspace/embedded-framework/build/tests/time/cmake_install.cmake")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/logger_basic.dir/main.c.o CMakeFiles/logger_basic.dir/__/__/__/services/logger/logger.c.o CMakeFiles/logger_basic.dir/__/__/__/platform/linux/platform_linux.c.o -o logger_basic 

@@ -142,6 +142,136 @@ event_basic/fast:
 	$(MAKE) $(MAKESILENT) -f examples/event_basic/CMakeFiles/event_basic.dir/build.make examples/event_basic/CMakeFiles/event_basic.dir/build
 .PHONY : event_basic/fast
 
+#=============================================================================
+# Target rules for targets named event_test
+
+# Build rule for target.
+event_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 event_test
+.PHONY : event_test
+
+# fast build rule for target.
+event_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/event/CMakeFiles/event_test.dir/build.make tests/event/CMakeFiles/event_test.dir/build
+.PHONY : event_test/fast
+
+#=============================================================================
+# Target rules for targets named logger_basic
+
+# Build rule for target.
+logger_basic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logger_basic
+.PHONY : logger_basic
+
+# fast build rule for target.
+logger_basic/fast:
+	$(MAKE) $(MAKESILENT) -f examples/logger/logger_basic/CMakeFiles/logger_basic.dir/build.make examples/logger/logger_basic/CMakeFiles/logger_basic.dir/build
+.PHONY : logger_basic/fast
+
+#=============================================================================
+# Target rules for targets named logger_test
+
+# Build rule for target.
+logger_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logger_test
+.PHONY : logger_test
+
+# fast build rule for target.
+logger_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/logger/CMakeFiles/logger_test.dir/build.make tests/logger/CMakeFiles/logger_test.dir/build
+.PHONY : logger_test/fast
+
+#=============================================================================
+# Target rules for targets named module_registration
+
+# Build rule for target.
+module_registration: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_registration
+.PHONY : module_registration
+
+# fast build rule for target.
+module_registration/fast:
+	$(MAKE) $(MAKESILENT) -f examples/module_manager/module_registration/CMakeFiles/module_registration.dir/build.make examples/module_manager/module_registration/CMakeFiles/module_registration.dir/build
+.PHONY : module_registration/fast
+
+#=============================================================================
+# Target rules for targets named module_context
+
+# Build rule for target.
+module_context: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_context
+.PHONY : module_context
+
+# fast build rule for target.
+module_context/fast:
+	$(MAKE) $(MAKESILENT) -f examples/module_manager/module_context/CMakeFiles/module_context.dir/build.make examples/module_manager/module_context/CMakeFiles/module_context.dir/build
+.PHONY : module_context/fast
+
+#=============================================================================
+# Target rules for targets named module_manager_test
+
+# Build rule for target.
+module_manager_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_manager_test
+.PHONY : module_manager_test
+
+# fast build rule for target.
+module_manager_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/module_manager/CMakeFiles/module_manager_test.dir/build.make tests/module_manager/CMakeFiles/module_manager_test.dir/build
+.PHONY : module_manager_test/fast
+
+#=============================================================================
+# Target rules for targets named lipo_battery_basic
+
+# Build rule for target.
+lipo_battery_basic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lipo_battery_basic
+.PHONY : lipo_battery_basic
+
+# fast build rule for target.
+lipo_battery_basic/fast:
+	$(MAKE) $(MAKESILENT) -f examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/build.make examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/build
+.PHONY : lipo_battery_basic/fast
+
+#=============================================================================
+# Target rules for targets named lipo_battery_test
+
+# Build rule for target.
+lipo_battery_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lipo_battery_test
+.PHONY : lipo_battery_test
+
+# fast build rule for target.
+lipo_battery_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/build.make tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/build
+.PHONY : lipo_battery_test/fast
+
+#=============================================================================
+# Target rules for targets named time_basic
+
+# Build rule for target.
+time_basic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 time_basic
+.PHONY : time_basic
+
+# fast build rule for target.
+time_basic/fast:
+	$(MAKE) $(MAKESILENT) -f examples/time/time_basic/CMakeFiles/time_basic.dir/build.make examples/time/time_basic/CMakeFiles/time_basic.dir/build
+.PHONY : time_basic/fast
+
+#=============================================================================
+# Target rules for targets named time_test
+
+# Build rule for target.
+time_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 time_test
+.PHONY : time_test
+
+# fast build rule for target.
+time_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/time/CMakeFiles/time_test.dir/build.make tests/time/CMakeFiles/time_test.dir/build
+.PHONY : time_test/fast
+
 apps/health_monitor/main.o: apps/health_monitor/main.c.o
 .PHONY : apps/health_monitor/main.o
 
@@ -295,7 +425,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... event_basic"
+	@echo "... event_test"
 	@echo "... health_monitor"
+	@echo "... lipo_battery_basic"
+	@echo "... lipo_battery_test"
+	@echo "... logger_basic"
+	@echo "... logger_test"
+	@echo "... module_context"
+	@echo "... module_manager_test"
+	@echo "... module_registration"
+	@echo "... time_basic"
+	@echo "... time_test"
 	@echo "... apps/health_monitor/main.o"
 	@echo "... apps/health_monitor/main.i"
 	@echo "... apps/health_monitor/main.s"

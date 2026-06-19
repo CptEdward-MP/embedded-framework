@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/time_test.dir/main.c.o CMakeFiles/time_test.dir/__/__/services/time/time.c.o CMakeFiles/time_test.dir/__/__/services/logger/logger.c.o CMakeFiles/time_test.dir/__/__/platform/linux/platform_linux.c.o -o time_test 

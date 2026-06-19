@@ -45,5 +45,64 @@ target_include_directories(health_monitor PRIVATE
     osal/posix
 )
 
+
+
+
+
+
 add_subdirectory(
     examples/event_basic)
+
+add_subdirectory(
+    tests/event)
+
+
+
+
+
+
+
+add_subdirectory(
+    examples/logger/logger_basic)
+
+add_subdirectory(
+    tests/logger)
+
+
+
+
+
+
+
+add_subdirectory(
+    examples/module_manager/module_registration)
+
+add_subdirectory(
+    examples/module_manager/module_context)
+
+add_subdirectory(
+    tests/module_manager)
+
+
+
+
+
+
+
+
+add_subdirectory(
+    examples/lipo_battery/lipo_battery_basic)
+
+add_subdirectory(
+    tests/lipo_battery)
+
+
+
+
+
+
+add_subdirectory(
+    examples/time/time_basic)
+
+add_subdirectory(
+    tests/time)

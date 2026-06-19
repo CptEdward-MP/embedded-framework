@@ -65,15 +65,45 @@ CMAKE_BINARY_DIR = /home/anansh_andey/workspace/embedded-framework/build
 # The main recursive "all" target.
 all: CMakeFiles/health_monitor.dir/all
 all: examples/event_basic/all
+all: tests/event/all
+all: examples/logger/logger_basic/all
+all: tests/logger/all
+all: examples/module_manager/module_registration/all
+all: examples/module_manager/module_context/all
+all: tests/module_manager/all
+all: examples/lipo_battery/lipo_battery_basic/all
+all: tests/lipo_battery/all
+all: examples/time/time_basic/all
+all: tests/time/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: examples/event_basic/preinstall
+preinstall: tests/event/preinstall
+preinstall: examples/logger/logger_basic/preinstall
+preinstall: tests/logger/preinstall
+preinstall: examples/module_manager/module_registration/preinstall
+preinstall: examples/module_manager/module_context/preinstall
+preinstall: tests/module_manager/preinstall
+preinstall: examples/lipo_battery/lipo_battery_basic/preinstall
+preinstall: tests/lipo_battery/preinstall
+preinstall: examples/time/time_basic/preinstall
+preinstall: tests/time/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/health_monitor.dir/clean
 clean: examples/event_basic/clean
+clean: tests/event/clean
+clean: examples/logger/logger_basic/clean
+clean: tests/logger/clean
+clean: examples/module_manager/module_registration/clean
+clean: examples/module_manager/module_context/clean
+clean: tests/module_manager/clean
+clean: examples/lipo_battery/lipo_battery_basic/clean
+clean: tests/lipo_battery/clean
+clean: examples/time/time_basic/clean
+clean: tests/time/clean
 .PHONY : clean
 
 #=============================================================================
@@ -92,13 +122,163 @@ examples/event_basic/clean: examples/event_basic/CMakeFiles/event_basic.dir/clea
 .PHONY : examples/event_basic/clean
 
 #=============================================================================
+# Directory level rules for directory examples/lipo_battery/lipo_battery_basic
+
+# Recursive "all" directory target.
+examples/lipo_battery/lipo_battery_basic/all: examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/all
+.PHONY : examples/lipo_battery/lipo_battery_basic/all
+
+# Recursive "preinstall" directory target.
+examples/lipo_battery/lipo_battery_basic/preinstall:
+.PHONY : examples/lipo_battery/lipo_battery_basic/preinstall
+
+# Recursive "clean" directory target.
+examples/lipo_battery/lipo_battery_basic/clean: examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/clean
+.PHONY : examples/lipo_battery/lipo_battery_basic/clean
+
+#=============================================================================
+# Directory level rules for directory examples/logger/logger_basic
+
+# Recursive "all" directory target.
+examples/logger/logger_basic/all: examples/logger/logger_basic/CMakeFiles/logger_basic.dir/all
+.PHONY : examples/logger/logger_basic/all
+
+# Recursive "preinstall" directory target.
+examples/logger/logger_basic/preinstall:
+.PHONY : examples/logger/logger_basic/preinstall
+
+# Recursive "clean" directory target.
+examples/logger/logger_basic/clean: examples/logger/logger_basic/CMakeFiles/logger_basic.dir/clean
+.PHONY : examples/logger/logger_basic/clean
+
+#=============================================================================
+# Directory level rules for directory examples/module_manager/module_context
+
+# Recursive "all" directory target.
+examples/module_manager/module_context/all: examples/module_manager/module_context/CMakeFiles/module_context.dir/all
+.PHONY : examples/module_manager/module_context/all
+
+# Recursive "preinstall" directory target.
+examples/module_manager/module_context/preinstall:
+.PHONY : examples/module_manager/module_context/preinstall
+
+# Recursive "clean" directory target.
+examples/module_manager/module_context/clean: examples/module_manager/module_context/CMakeFiles/module_context.dir/clean
+.PHONY : examples/module_manager/module_context/clean
+
+#=============================================================================
+# Directory level rules for directory examples/module_manager/module_registration
+
+# Recursive "all" directory target.
+examples/module_manager/module_registration/all: examples/module_manager/module_registration/CMakeFiles/module_registration.dir/all
+.PHONY : examples/module_manager/module_registration/all
+
+# Recursive "preinstall" directory target.
+examples/module_manager/module_registration/preinstall:
+.PHONY : examples/module_manager/module_registration/preinstall
+
+# Recursive "clean" directory target.
+examples/module_manager/module_registration/clean: examples/module_manager/module_registration/CMakeFiles/module_registration.dir/clean
+.PHONY : examples/module_manager/module_registration/clean
+
+#=============================================================================
+# Directory level rules for directory examples/time/time_basic
+
+# Recursive "all" directory target.
+examples/time/time_basic/all: examples/time/time_basic/CMakeFiles/time_basic.dir/all
+.PHONY : examples/time/time_basic/all
+
+# Recursive "preinstall" directory target.
+examples/time/time_basic/preinstall:
+.PHONY : examples/time/time_basic/preinstall
+
+# Recursive "clean" directory target.
+examples/time/time_basic/clean: examples/time/time_basic/CMakeFiles/time_basic.dir/clean
+.PHONY : examples/time/time_basic/clean
+
+#=============================================================================
+# Directory level rules for directory tests/event
+
+# Recursive "all" directory target.
+tests/event/all: tests/event/CMakeFiles/event_test.dir/all
+.PHONY : tests/event/all
+
+# Recursive "preinstall" directory target.
+tests/event/preinstall:
+.PHONY : tests/event/preinstall
+
+# Recursive "clean" directory target.
+tests/event/clean: tests/event/CMakeFiles/event_test.dir/clean
+.PHONY : tests/event/clean
+
+#=============================================================================
+# Directory level rules for directory tests/lipo_battery
+
+# Recursive "all" directory target.
+tests/lipo_battery/all: tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/all
+.PHONY : tests/lipo_battery/all
+
+# Recursive "preinstall" directory target.
+tests/lipo_battery/preinstall:
+.PHONY : tests/lipo_battery/preinstall
+
+# Recursive "clean" directory target.
+tests/lipo_battery/clean: tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/clean
+.PHONY : tests/lipo_battery/clean
+
+#=============================================================================
+# Directory level rules for directory tests/logger
+
+# Recursive "all" directory target.
+tests/logger/all: tests/logger/CMakeFiles/logger_test.dir/all
+.PHONY : tests/logger/all
+
+# Recursive "preinstall" directory target.
+tests/logger/preinstall:
+.PHONY : tests/logger/preinstall
+
+# Recursive "clean" directory target.
+tests/logger/clean: tests/logger/CMakeFiles/logger_test.dir/clean
+.PHONY : tests/logger/clean
+
+#=============================================================================
+# Directory level rules for directory tests/module_manager
+
+# Recursive "all" directory target.
+tests/module_manager/all: tests/module_manager/CMakeFiles/module_manager_test.dir/all
+.PHONY : tests/module_manager/all
+
+# Recursive "preinstall" directory target.
+tests/module_manager/preinstall:
+.PHONY : tests/module_manager/preinstall
+
+# Recursive "clean" directory target.
+tests/module_manager/clean: tests/module_manager/CMakeFiles/module_manager_test.dir/clean
+.PHONY : tests/module_manager/clean
+
+#=============================================================================
+# Directory level rules for directory tests/time
+
+# Recursive "all" directory target.
+tests/time/all: tests/time/CMakeFiles/time_test.dir/all
+.PHONY : tests/time/all
+
+# Recursive "preinstall" directory target.
+tests/time/preinstall:
+.PHONY : tests/time/preinstall
+
+# Recursive "clean" directory target.
+tests/time/clean: tests/time/CMakeFiles/time_test.dir/clean
+.PHONY : tests/time/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/health_monitor.dir
 
 # All Build rule for target.
 CMakeFiles/health_monitor.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/health_monitor.dir/build.make CMakeFiles/health_monitor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/health_monitor.dir/build.make CMakeFiles/health_monitor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=6,7,8,9,10,11,12 "Built target health_monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=11,12,13,14,15,16,17 "Built target health_monitor"
 .PHONY : CMakeFiles/health_monitor.dir/all
 
 # Build rule for subdir invocation for target.
@@ -142,6 +322,266 @@ event_basic: examples/event_basic/CMakeFiles/event_basic.dir/rule
 examples/event_basic/CMakeFiles/event_basic.dir/clean:
 	$(MAKE) $(MAKESILENT) -f examples/event_basic/CMakeFiles/event_basic.dir/build.make examples/event_basic/CMakeFiles/event_basic.dir/clean
 .PHONY : examples/event_basic/CMakeFiles/event_basic.dir/clean
+
+#=============================================================================
+# Target rules for target tests/event/CMakeFiles/event_test.dir
+
+# All Build rule for target.
+tests/event/CMakeFiles/event_test.dir/all:
+	$(MAKE) $(MAKESILENT) -f tests/event/CMakeFiles/event_test.dir/build.make tests/event/CMakeFiles/event_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/event/CMakeFiles/event_test.dir/build.make tests/event/CMakeFiles/event_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=6,7,8,9,10 "Built target event_test"
+.PHONY : tests/event/CMakeFiles/event_test.dir/all
+
+# Build rule for subdir invocation for target.
+tests/event/CMakeFiles/event_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/event/CMakeFiles/event_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 0
+.PHONY : tests/event/CMakeFiles/event_test.dir/rule
+
+# Convenience name for target.
+event_test: tests/event/CMakeFiles/event_test.dir/rule
+.PHONY : event_test
+
+# clean rule for target.
+tests/event/CMakeFiles/event_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/event/CMakeFiles/event_test.dir/build.make tests/event/CMakeFiles/event_test.dir/clean
+.PHONY : tests/event/CMakeFiles/event_test.dir/clean
+
+#=============================================================================
+# Target rules for target examples/logger/logger_basic/CMakeFiles/logger_basic.dir
+
+# All Build rule for target.
+examples/logger/logger_basic/CMakeFiles/logger_basic.dir/all:
+	$(MAKE) $(MAKESILENT) -f examples/logger/logger_basic/CMakeFiles/logger_basic.dir/build.make examples/logger/logger_basic/CMakeFiles/logger_basic.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/logger/logger_basic/CMakeFiles/logger_basic.dir/build.make examples/logger/logger_basic/CMakeFiles/logger_basic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=28,29,30,31 "Built target logger_basic"
+.PHONY : examples/logger/logger_basic/CMakeFiles/logger_basic.dir/all
+
+# Build rule for subdir invocation for target.
+examples/logger/logger_basic/CMakeFiles/logger_basic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/logger/logger_basic/CMakeFiles/logger_basic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 0
+.PHONY : examples/logger/logger_basic/CMakeFiles/logger_basic.dir/rule
+
+# Convenience name for target.
+logger_basic: examples/logger/logger_basic/CMakeFiles/logger_basic.dir/rule
+.PHONY : logger_basic
+
+# clean rule for target.
+examples/logger/logger_basic/CMakeFiles/logger_basic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/logger/logger_basic/CMakeFiles/logger_basic.dir/build.make examples/logger/logger_basic/CMakeFiles/logger_basic.dir/clean
+.PHONY : examples/logger/logger_basic/CMakeFiles/logger_basic.dir/clean
+
+#=============================================================================
+# Target rules for target tests/logger/CMakeFiles/logger_test.dir
+
+# All Build rule for target.
+tests/logger/CMakeFiles/logger_test.dir/all:
+	$(MAKE) $(MAKESILENT) -f tests/logger/CMakeFiles/logger_test.dir/build.make tests/logger/CMakeFiles/logger_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/logger/CMakeFiles/logger_test.dir/build.make tests/logger/CMakeFiles/logger_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=32,33,34,35 "Built target logger_test"
+.PHONY : tests/logger/CMakeFiles/logger_test.dir/all
+
+# Build rule for subdir invocation for target.
+tests/logger/CMakeFiles/logger_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/logger/CMakeFiles/logger_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 0
+.PHONY : tests/logger/CMakeFiles/logger_test.dir/rule
+
+# Convenience name for target.
+logger_test: tests/logger/CMakeFiles/logger_test.dir/rule
+.PHONY : logger_test
+
+# clean rule for target.
+tests/logger/CMakeFiles/logger_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/logger/CMakeFiles/logger_test.dir/build.make tests/logger/CMakeFiles/logger_test.dir/clean
+.PHONY : tests/logger/CMakeFiles/logger_test.dir/clean
+
+#=============================================================================
+# Target rules for target examples/module_manager/module_registration/CMakeFiles/module_registration.dir
+
+# All Build rule for target.
+examples/module_manager/module_registration/CMakeFiles/module_registration.dir/all:
+	$(MAKE) $(MAKESILENT) -f examples/module_manager/module_registration/CMakeFiles/module_registration.dir/build.make examples/module_manager/module_registration/CMakeFiles/module_registration.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/module_manager/module_registration/CMakeFiles/module_registration.dir/build.make examples/module_manager/module_registration/CMakeFiles/module_registration.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=46,47,48,49,50 "Built target module_registration"
+.PHONY : examples/module_manager/module_registration/CMakeFiles/module_registration.dir/all
+
+# Build rule for subdir invocation for target.
+examples/module_manager/module_registration/CMakeFiles/module_registration.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/module_manager/module_registration/CMakeFiles/module_registration.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 0
+.PHONY : examples/module_manager/module_registration/CMakeFiles/module_registration.dir/rule
+
+# Convenience name for target.
+module_registration: examples/module_manager/module_registration/CMakeFiles/module_registration.dir/rule
+.PHONY : module_registration
+
+# clean rule for target.
+examples/module_manager/module_registration/CMakeFiles/module_registration.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/module_manager/module_registration/CMakeFiles/module_registration.dir/build.make examples/module_manager/module_registration/CMakeFiles/module_registration.dir/clean
+.PHONY : examples/module_manager/module_registration/CMakeFiles/module_registration.dir/clean
+
+#=============================================================================
+# Target rules for target examples/module_manager/module_context/CMakeFiles/module_context.dir
+
+# All Build rule for target.
+examples/module_manager/module_context/CMakeFiles/module_context.dir/all:
+	$(MAKE) $(MAKESILENT) -f examples/module_manager/module_context/CMakeFiles/module_context.dir/build.make examples/module_manager/module_context/CMakeFiles/module_context.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/module_manager/module_context/CMakeFiles/module_context.dir/build.make examples/module_manager/module_context/CMakeFiles/module_context.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=36,37,38,39,40 "Built target module_context"
+.PHONY : examples/module_manager/module_context/CMakeFiles/module_context.dir/all
+
+# Build rule for subdir invocation for target.
+examples/module_manager/module_context/CMakeFiles/module_context.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/module_manager/module_context/CMakeFiles/module_context.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 0
+.PHONY : examples/module_manager/module_context/CMakeFiles/module_context.dir/rule
+
+# Convenience name for target.
+module_context: examples/module_manager/module_context/CMakeFiles/module_context.dir/rule
+.PHONY : module_context
+
+# clean rule for target.
+examples/module_manager/module_context/CMakeFiles/module_context.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/module_manager/module_context/CMakeFiles/module_context.dir/build.make examples/module_manager/module_context/CMakeFiles/module_context.dir/clean
+.PHONY : examples/module_manager/module_context/CMakeFiles/module_context.dir/clean
+
+#=============================================================================
+# Target rules for target tests/module_manager/CMakeFiles/module_manager_test.dir
+
+# All Build rule for target.
+tests/module_manager/CMakeFiles/module_manager_test.dir/all:
+	$(MAKE) $(MAKESILENT) -f tests/module_manager/CMakeFiles/module_manager_test.dir/build.make tests/module_manager/CMakeFiles/module_manager_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/module_manager/CMakeFiles/module_manager_test.dir/build.make tests/module_manager/CMakeFiles/module_manager_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=41,42,43,44,45 "Built target module_manager_test"
+.PHONY : tests/module_manager/CMakeFiles/module_manager_test.dir/all
+
+# Build rule for subdir invocation for target.
+tests/module_manager/CMakeFiles/module_manager_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/module_manager/CMakeFiles/module_manager_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 0
+.PHONY : tests/module_manager/CMakeFiles/module_manager_test.dir/rule
+
+# Convenience name for target.
+module_manager_test: tests/module_manager/CMakeFiles/module_manager_test.dir/rule
+.PHONY : module_manager_test
+
+# clean rule for target.
+tests/module_manager/CMakeFiles/module_manager_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/module_manager/CMakeFiles/module_manager_test.dir/build.make tests/module_manager/CMakeFiles/module_manager_test.dir/clean
+.PHONY : tests/module_manager/CMakeFiles/module_manager_test.dir/clean
+
+#=============================================================================
+# Target rules for target examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir
+
+# All Build rule for target.
+examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/all:
+	$(MAKE) $(MAKESILENT) -f examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/build.make examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/build.make examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=18,19,20,21,22 "Built target lipo_battery_basic"
+.PHONY : examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/all
+
+# Build rule for subdir invocation for target.
+examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 0
+.PHONY : examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/rule
+
+# Convenience name for target.
+lipo_battery_basic: examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/rule
+.PHONY : lipo_battery_basic
+
+# clean rule for target.
+examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/build.make examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/clean
+.PHONY : examples/lipo_battery/lipo_battery_basic/CMakeFiles/lipo_battery_basic.dir/clean
+
+#=============================================================================
+# Target rules for target tests/lipo_battery/CMakeFiles/lipo_battery_test.dir
+
+# All Build rule for target.
+tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/all:
+	$(MAKE) $(MAKESILENT) -f tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/build.make tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/build.make tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=23,24,25,26,27 "Built target lipo_battery_test"
+.PHONY : tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/all
+
+# Build rule for subdir invocation for target.
+tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 0
+.PHONY : tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/rule
+
+# Convenience name for target.
+lipo_battery_test: tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/rule
+.PHONY : lipo_battery_test
+
+# clean rule for target.
+tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/build.make tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/clean
+.PHONY : tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/clean
+
+#=============================================================================
+# Target rules for target examples/time/time_basic/CMakeFiles/time_basic.dir
+
+# All Build rule for target.
+examples/time/time_basic/CMakeFiles/time_basic.dir/all:
+	$(MAKE) $(MAKESILENT) -f examples/time/time_basic/CMakeFiles/time_basic.dir/build.make examples/time/time_basic/CMakeFiles/time_basic.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/time/time_basic/CMakeFiles/time_basic.dir/build.make examples/time/time_basic/CMakeFiles/time_basic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=51,52,53,54,55 "Built target time_basic"
+.PHONY : examples/time/time_basic/CMakeFiles/time_basic.dir/all
+
+# Build rule for subdir invocation for target.
+examples/time/time_basic/CMakeFiles/time_basic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/time/time_basic/CMakeFiles/time_basic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 0
+.PHONY : examples/time/time_basic/CMakeFiles/time_basic.dir/rule
+
+# Convenience name for target.
+time_basic: examples/time/time_basic/CMakeFiles/time_basic.dir/rule
+.PHONY : time_basic
+
+# clean rule for target.
+examples/time/time_basic/CMakeFiles/time_basic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/time/time_basic/CMakeFiles/time_basic.dir/build.make examples/time/time_basic/CMakeFiles/time_basic.dir/clean
+.PHONY : examples/time/time_basic/CMakeFiles/time_basic.dir/clean
+
+#=============================================================================
+# Target rules for target tests/time/CMakeFiles/time_test.dir
+
+# All Build rule for target.
+tests/time/CMakeFiles/time_test.dir/all:
+	$(MAKE) $(MAKESILENT) -f tests/time/CMakeFiles/time_test.dir/build.make tests/time/CMakeFiles/time_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/time/CMakeFiles/time_test.dir/build.make tests/time/CMakeFiles/time_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=56,57,58,59,60 "Built target time_test"
+.PHONY : tests/time/CMakeFiles/time_test.dir/all
+
+# Build rule for subdir invocation for target.
+tests/time/CMakeFiles/time_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/time/CMakeFiles/time_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 0
+.PHONY : tests/time/CMakeFiles/time_test.dir/rule
+
+# Convenience name for target.
+time_test: tests/time/CMakeFiles/time_test.dir/rule
+.PHONY : time_test
+
+# clean rule for target.
+tests/time/CMakeFiles/time_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/time/CMakeFiles/time_test.dir/build.make tests/time/CMakeFiles/time_test.dir/clean
+.PHONY : tests/time/CMakeFiles/time_test.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

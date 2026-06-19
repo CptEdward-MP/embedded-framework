@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/module_registration.dir/main.c.o CMakeFiles/module_registration.dir/__/__/__/core/module_manager/module_manager.c.o CMakeFiles/module_registration.dir/__/__/__/services/logger/logger.c.o CMakeFiles/module_registration.dir/__/__/__/platform/linux/platform_linux.c.o -o module_registration 

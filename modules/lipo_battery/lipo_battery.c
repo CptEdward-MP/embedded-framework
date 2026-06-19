@@ -3,17 +3,23 @@
 #include "logger.h"
 #include "platform.h"
 
-
-
 /* Configure battery instance */
 void LipoBattery_Configure(
     lipo_battery_t *battery,
     uint8_t cell_count,
     uint8_t adc_channel)
 {
-    battery->config.cell_count = cell_count;
+    battery->config.cell_count =
+        cell_count;
 
-    battery->config.adc_channel = adc_channel;
+    battery->config.adc_channel =
+        adc_channel;
+
+    battery->data.status =
+        LIPO_STATUS_OK;
+
+    battery->last_status =
+        LIPO_STATUS_OK;
 }
 
 /* Initialize battery instance */
@@ -22,7 +28,8 @@ void LipoBattery_Init(
 {
     (void)battery;
 
-    Log_Info("LiPo Battery Initialized");
+    Log_Info(
+        "LiPo Battery Initialized");
 }
 
 /* Get latest battery data */
@@ -38,7 +45,8 @@ void LipoBattery_Update(
 {
     if (battery->config.cell_count == 0)
     {
-        Log_Error("LiPo Battery Not Configured");
+        Log_Error(
+            "LiPo Battery Not Configured");
 
         return;
     }
@@ -51,35 +59,72 @@ void LipoBattery_Update(
         battery->data.voltage /
         battery->config.cell_count;
 
-if (battery->data.cell_voltage >= 3.8f)
-{
-    battery->data.status =
-        LIPO_STATUS_OK;
-}
-else if (battery->data.cell_voltage >= 3.75f)
-{
-    battery->data.status =
-        LIPO_STATUS_WARNING;
+    lipo_battery_status_t new_status;
 
-    Log_Warn(
-        "LiPo Battery Warning");
-}
-else if (battery->data.cell_voltage >= 3.6f)
-{
-    battery->data.status =
-        LIPO_STATUS_LOW;
+    if (battery->data.cell_voltage >= 3.8f)
+    {
+        new_status =
+            LIPO_STATUS_OK;
+    }
+    else if (battery->data.cell_voltage >= 3.75f)
+    {
+        new_status =
+            LIPO_STATUS_WARNING;
+    }
+    else if (battery->data.cell_voltage >= 3.6f)
+    {
+        new_status =
+            LIPO_STATUS_LOW;
+    }
+    else
+    {
+        new_status =
+            LIPO_STATUS_CRITICAL;
+    }
 
-    Log_Error(
-        "LiPo Battery Low");
-}
-else
-{
     battery->data.status =
-        LIPO_STATUS_CRITICAL;
+        new_status;
 
-    Log_Error(
-        "LiPo Battery Critical");
-}
+    if (new_status != battery->last_status)
+    {
+        battery->last_status =
+            new_status;
+
+        switch (new_status)
+        {
+            case LIPO_STATUS_OK:
+
+                Log_Info(
+                    "LiPo Battery OK");
+
+                break;
+
+            case LIPO_STATUS_WARNING:
+
+                Log_Warn(
+                    "LiPo Battery Warning");
+
+                break;
+
+            case LIPO_STATUS_LOW:
+
+                Log_Error(
+                    "LiPo Battery Low");
+
+                break;
+
+            case LIPO_STATUS_CRITICAL:
+
+                Log_Error(
+                    "LiPo Battery Critical");
+
+                break;
+
+            default:
+
+                break;
+        }
+    }
 }
 
 /* Module init adapter */

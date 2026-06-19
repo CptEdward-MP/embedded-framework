@@ -22,6 +22,7 @@ LiPo Battery V1
 * Voltage acquisition through Platform ADC
 * Per-cell voltage calculation
 * Battery status classification
+* Battery status transition detection
 * Low battery detection
 * Logger integration
 * Module Manager integration
@@ -138,8 +139,13 @@ Battery Status Classification
 
         ↓
 
+Status Change Detection
+
+        ↓
+
 Logger / Application Layer
 ```
+
 
 ---
 
@@ -328,7 +334,6 @@ Data Storage
 * No charge/discharge tracking
 * No balancing information
 * No event notification system
-* No status transition tracking
 
 ---
 

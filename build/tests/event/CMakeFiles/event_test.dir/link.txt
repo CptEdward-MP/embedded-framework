@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/event_test.dir/main.c.o CMakeFiles/event_test.dir/__/__/services/event/event.c.o CMakeFiles/event_test.dir/__/__/services/logger/logger.c.o CMakeFiles/event_test.dir/__/__/platform/linux/platform_linux.c.o -o event_test 

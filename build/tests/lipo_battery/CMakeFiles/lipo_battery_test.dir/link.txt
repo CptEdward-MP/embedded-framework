@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/lipo_battery_test.dir/main.c.o CMakeFiles/lipo_battery_test.dir/__/__/modules/lipo_battery/lipo_battery.c.o CMakeFiles/lipo_battery_test.dir/__/__/services/logger/logger.c.o CMakeFiles/lipo_battery_test.dir/__/__/platform/linux/platform_linux.c.o -o lipo_battery_test 
