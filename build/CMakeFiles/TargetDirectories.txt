@@ -34,3 +34,9 @@
 /home/anansh_andey/workspace/embedded-framework/build/tests/time/CMakeFiles/time_test.dir
 /home/anansh_andey/workspace/embedded-framework/build/tests/time/CMakeFiles/edit_cache.dir
 /home/anansh_andey/workspace/embedded-framework/build/tests/time/CMakeFiles/rebuild_cache.dir
+/home/anansh_andey/workspace/embedded-framework/build/examples/scheduler/scheduler_basic/CMakeFiles/scheduler_basic.dir
+/home/anansh_andey/workspace/embedded-framework/build/examples/scheduler/scheduler_basic/CMakeFiles/edit_cache.dir
+/home/anansh_andey/workspace/embedded-framework/build/examples/scheduler/scheduler_basic/CMakeFiles/rebuild_cache.dir
+/home/anansh_andey/workspace/embedded-framework/build/tests/scheduler/CMakeFiles/scheduler_test.dir
+/home/anansh_andey/workspace/embedded-framework/build/tests/scheduler/CMakeFiles/edit_cache.dir
+/home/anansh_andey/workspace/embedded-framework/build/tests/scheduler/CMakeFiles/rebuild_cache.dir

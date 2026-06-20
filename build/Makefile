@@ -272,6 +272,32 @@ time_test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/time/CMakeFiles/time_test.dir/build.make tests/time/CMakeFiles/time_test.dir/build
 .PHONY : time_test/fast
 
+#=============================================================================
+# Target rules for targets named scheduler_basic
+
+# Build rule for target.
+scheduler_basic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scheduler_basic
+.PHONY : scheduler_basic
+
+# fast build rule for target.
+scheduler_basic/fast:
+	$(MAKE) $(MAKESILENT) -f examples/scheduler/scheduler_basic/CMakeFiles/scheduler_basic.dir/build.make examples/scheduler/scheduler_basic/CMakeFiles/scheduler_basic.dir/build
+.PHONY : scheduler_basic/fast
+
+#=============================================================================
+# Target rules for targets named scheduler_test
+
+# Build rule for target.
+scheduler_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scheduler_test
+.PHONY : scheduler_test
+
+# fast build rule for target.
+scheduler_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/scheduler/CMakeFiles/scheduler_test.dir/build.make tests/scheduler/CMakeFiles/scheduler_test.dir/build
+.PHONY : scheduler_test/fast
+
 apps/health_monitor/main.o: apps/health_monitor/main.c.o
 .PHONY : apps/health_monitor/main.o
 
@@ -434,6 +460,8 @@ help:
 	@echo "... module_context"
 	@echo "... module_manager_test"
 	@echo "... module_registration"
+	@echo "... scheduler_basic"
+	@echo "... scheduler_test"
 	@echo "... time_basic"
 	@echo "... time_test"
 	@echo "... apps/health_monitor/main.o"

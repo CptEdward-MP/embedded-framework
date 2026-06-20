@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/scheduler_test.dir/main.c.o CMakeFiles/scheduler_test.dir/__/__/services/scheduler/scheduler.c.o CMakeFiles/scheduler_test.dir/__/__/services/time/time.c.o CMakeFiles/scheduler_test.dir/__/__/services/logger/logger.c.o CMakeFiles/scheduler_test.dir/__/__/platform/linux/platform_linux.c.o -o scheduler_test 

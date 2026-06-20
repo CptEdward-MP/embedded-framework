@@ -106,3 +106,14 @@ add_subdirectory(
 
 add_subdirectory(
     tests/time)
+
+
+
+
+
+
+add_subdirectory(
+    examples/scheduler/scheduler_basic)
+
+add_subdirectory(
+    tests/scheduler)

@@ -15,11 +15,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/anansh_andey/workspace/embedded-framework/examples/logger/logger_basic/CMakeLists.txt"
   "/home/anansh_andey/workspace/embedded-framework/examples/module_manager/module_context/CMakeLists.txt"
   "/home/anansh_andey/workspace/embedded-framework/examples/module_manager/module_registration/CMakeLists.txt"
+  "/home/anansh_andey/workspace/embedded-framework/examples/scheduler/scheduler_basic/CMakeLists.txt"
   "/home/anansh_andey/workspace/embedded-framework/examples/time/time_basic/CMakeLists.txt"
   "/home/anansh_andey/workspace/embedded-framework/tests/event/CMakeLists.txt"
   "/home/anansh_andey/workspace/embedded-framework/tests/lipo_battery/CMakeLists.txt"
   "/home/anansh_andey/workspace/embedded-framework/tests/logger/CMakeLists.txt"
   "/home/anansh_andey/workspace/embedded-framework/tests/module_manager/CMakeLists.txt"
+  "/home/anansh_andey/workspace/embedded-framework/tests/scheduler/CMakeLists.txt"
   "/home/anansh_andey/workspace/embedded-framework/tests/time/CMakeLists.txt"
   "/usr/share/cmake-3.28/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
@@ -58,6 +60,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "tests/lipo_battery/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/time/time_basic/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/time/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/scheduler/scheduler_basic/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/scheduler/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -74,4 +78,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/DependInfo.cmake"
   "examples/time/time_basic/CMakeFiles/time_basic.dir/DependInfo.cmake"
   "tests/time/CMakeFiles/time_test.dir/DependInfo.cmake"
+  "examples/scheduler/scheduler_basic/CMakeFiles/scheduler_basic.dir/DependInfo.cmake"
+  "tests/scheduler/CMakeFiles/scheduler_test.dir/DependInfo.cmake"
   )
