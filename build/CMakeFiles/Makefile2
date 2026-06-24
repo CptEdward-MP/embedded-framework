@@ -68,6 +68,7 @@ all: examples/event_basic/all
 all: tests/event/all
 all: examples/logger/logger_basic/all
 all: tests/logger/all
+all: examples/logger/logger_formatted/all
 all: examples/module_manager/module_registration/all
 all: examples/module_manager/module_context/all
 all: tests/module_manager/all
@@ -77,6 +78,7 @@ all: examples/time/time_basic/all
 all: tests/time/all
 all: examples/scheduler/scheduler_basic/all
 all: tests/scheduler/all
+all: apps/robot_demo/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -84,6 +86,7 @@ preinstall: examples/event_basic/preinstall
 preinstall: tests/event/preinstall
 preinstall: examples/logger/logger_basic/preinstall
 preinstall: tests/logger/preinstall
+preinstall: examples/logger/logger_formatted/preinstall
 preinstall: examples/module_manager/module_registration/preinstall
 preinstall: examples/module_manager/module_context/preinstall
 preinstall: tests/module_manager/preinstall
@@ -93,6 +96,7 @@ preinstall: examples/time/time_basic/preinstall
 preinstall: tests/time/preinstall
 preinstall: examples/scheduler/scheduler_basic/preinstall
 preinstall: tests/scheduler/preinstall
+preinstall: apps/robot_demo/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -101,6 +105,7 @@ clean: examples/event_basic/clean
 clean: tests/event/clean
 clean: examples/logger/logger_basic/clean
 clean: tests/logger/clean
+clean: examples/logger/logger_formatted/clean
 clean: examples/module_manager/module_registration/clean
 clean: examples/module_manager/module_context/clean
 clean: tests/module_manager/clean
@@ -110,7 +115,23 @@ clean: examples/time/time_basic/clean
 clean: tests/time/clean
 clean: examples/scheduler/scheduler_basic/clean
 clean: tests/scheduler/clean
+clean: apps/robot_demo/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory apps/robot_demo
+
+# Recursive "all" directory target.
+apps/robot_demo/all: apps/robot_demo/CMakeFiles/robot_demo.dir/all
+.PHONY : apps/robot_demo/all
+
+# Recursive "preinstall" directory target.
+apps/robot_demo/preinstall:
+.PHONY : apps/robot_demo/preinstall
+
+# Recursive "clean" directory target.
+apps/robot_demo/clean: apps/robot_demo/CMakeFiles/robot_demo.dir/clean
+.PHONY : apps/robot_demo/clean
 
 #=============================================================================
 # Directory level rules for directory examples/event_basic
@@ -156,6 +177,21 @@ examples/logger/logger_basic/preinstall:
 # Recursive "clean" directory target.
 examples/logger/logger_basic/clean: examples/logger/logger_basic/CMakeFiles/logger_basic.dir/clean
 .PHONY : examples/logger/logger_basic/clean
+
+#=============================================================================
+# Directory level rules for directory examples/logger/logger_formatted
+
+# Recursive "all" directory target.
+examples/logger/logger_formatted/all: examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/all
+.PHONY : examples/logger/logger_formatted/all
+
+# Recursive "preinstall" directory target.
+examples/logger/logger_formatted/preinstall:
+.PHONY : examples/logger/logger_formatted/preinstall
+
+# Recursive "clean" directory target.
+examples/logger/logger_formatted/clean: examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/clean
+.PHONY : examples/logger/logger_formatted/clean
 
 #=============================================================================
 # Directory level rules for directory examples/module_manager/module_context
@@ -418,7 +454,7 @@ examples/logger/logger_basic/CMakeFiles/logger_basic.dir/clean:
 tests/logger/CMakeFiles/logger_test.dir/all:
 	$(MAKE) $(MAKESILENT) -f tests/logger/CMakeFiles/logger_test.dir/build.make tests/logger/CMakeFiles/logger_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/logger/CMakeFiles/logger_test.dir/build.make tests/logger/CMakeFiles/logger_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=32,33,34,35 "Built target logger_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=36,37,38,39 "Built target logger_test"
 .PHONY : tests/logger/CMakeFiles/logger_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -438,13 +474,39 @@ tests/logger/CMakeFiles/logger_test.dir/clean:
 .PHONY : tests/logger/CMakeFiles/logger_test.dir/clean
 
 #=============================================================================
+# Target rules for target examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir
+
+# All Build rule for target.
+examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/all:
+	$(MAKE) $(MAKESILENT) -f examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/build.make examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/build.make examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=32,33,34,35 "Built target logger_formatted"
+.PHONY : examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/all
+
+# Build rule for subdir invocation for target.
+examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 0
+.PHONY : examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/rule
+
+# Convenience name for target.
+logger_formatted: examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/rule
+.PHONY : logger_formatted
+
+# clean rule for target.
+examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/build.make examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/clean
+.PHONY : examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/clean
+
+#=============================================================================
 # Target rules for target examples/module_manager/module_registration/CMakeFiles/module_registration.dir
 
 # All Build rule for target.
 examples/module_manager/module_registration/CMakeFiles/module_registration.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/module_manager/module_registration/CMakeFiles/module_registration.dir/build.make examples/module_manager/module_registration/CMakeFiles/module_registration.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/module_manager/module_registration/CMakeFiles/module_registration.dir/build.make examples/module_manager/module_registration/CMakeFiles/module_registration.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=46,47,48,49,50 "Built target module_registration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=50,51,52,53,54 "Built target module_registration"
 .PHONY : examples/module_manager/module_registration/CMakeFiles/module_registration.dir/all
 
 # Build rule for subdir invocation for target.
@@ -470,7 +532,7 @@ examples/module_manager/module_registration/CMakeFiles/module_registration.dir/c
 examples/module_manager/module_context/CMakeFiles/module_context.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/module_manager/module_context/CMakeFiles/module_context.dir/build.make examples/module_manager/module_context/CMakeFiles/module_context.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/module_manager/module_context/CMakeFiles/module_context.dir/build.make examples/module_manager/module_context/CMakeFiles/module_context.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=36,37,38,39,40 "Built target module_context"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=40,41,42,43,44 "Built target module_context"
 .PHONY : examples/module_manager/module_context/CMakeFiles/module_context.dir/all
 
 # Build rule for subdir invocation for target.
@@ -496,7 +558,7 @@ examples/module_manager/module_context/CMakeFiles/module_context.dir/clean:
 tests/module_manager/CMakeFiles/module_manager_test.dir/all:
 	$(MAKE) $(MAKESILENT) -f tests/module_manager/CMakeFiles/module_manager_test.dir/build.make tests/module_manager/CMakeFiles/module_manager_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/module_manager/CMakeFiles/module_manager_test.dir/build.make tests/module_manager/CMakeFiles/module_manager_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=41,42,43,44,45 "Built target module_manager_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=45,46,47,48,49 "Built target module_manager_test"
 .PHONY : tests/module_manager/CMakeFiles/module_manager_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -574,7 +636,7 @@ tests/lipo_battery/CMakeFiles/lipo_battery_test.dir/clean:
 examples/time/time_basic/CMakeFiles/time_basic.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/time/time_basic/CMakeFiles/time_basic.dir/build.make examples/time/time_basic/CMakeFiles/time_basic.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/time/time_basic/CMakeFiles/time_basic.dir/build.make examples/time/time_basic/CMakeFiles/time_basic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=63,64,65,66,67 "Built target time_basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=78,79,80,81,82 "Built target time_basic"
 .PHONY : examples/time/time_basic/CMakeFiles/time_basic.dir/all
 
 # Build rule for subdir invocation for target.
@@ -600,7 +662,7 @@ examples/time/time_basic/CMakeFiles/time_basic.dir/clean:
 tests/time/CMakeFiles/time_test.dir/all:
 	$(MAKE) $(MAKESILENT) -f tests/time/CMakeFiles/time_test.dir/build.make tests/time/CMakeFiles/time_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/time/CMakeFiles/time_test.dir/build.make tests/time/CMakeFiles/time_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=68,69,70,71,72 "Built target time_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=83,84,85,86,87 "Built target time_test"
 .PHONY : tests/time/CMakeFiles/time_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -626,7 +688,7 @@ tests/time/CMakeFiles/time_test.dir/clean:
 examples/scheduler/scheduler_basic/CMakeFiles/scheduler_basic.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/scheduler/scheduler_basic/CMakeFiles/scheduler_basic.dir/build.make examples/scheduler/scheduler_basic/CMakeFiles/scheduler_basic.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/scheduler/scheduler_basic/CMakeFiles/scheduler_basic.dir/build.make examples/scheduler/scheduler_basic/CMakeFiles/scheduler_basic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=51,52,53,54,55,56 "Built target scheduler_basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=66,67,68,69,70,71 "Built target scheduler_basic"
 .PHONY : examples/scheduler/scheduler_basic/CMakeFiles/scheduler_basic.dir/all
 
 # Build rule for subdir invocation for target.
@@ -652,7 +714,7 @@ examples/scheduler/scheduler_basic/CMakeFiles/scheduler_basic.dir/clean:
 tests/scheduler/CMakeFiles/scheduler_test.dir/all:
 	$(MAKE) $(MAKESILENT) -f tests/scheduler/CMakeFiles/scheduler_test.dir/build.make tests/scheduler/CMakeFiles/scheduler_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/scheduler/CMakeFiles/scheduler_test.dir/build.make tests/scheduler/CMakeFiles/scheduler_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=57,58,59,60,61,62 "Built target scheduler_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=72,73,74,75,76,77 "Built target scheduler_test"
 .PHONY : tests/scheduler/CMakeFiles/scheduler_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -670,6 +732,32 @@ scheduler_test: tests/scheduler/CMakeFiles/scheduler_test.dir/rule
 tests/scheduler/CMakeFiles/scheduler_test.dir/clean:
 	$(MAKE) $(MAKESILENT) -f tests/scheduler/CMakeFiles/scheduler_test.dir/build.make tests/scheduler/CMakeFiles/scheduler_test.dir/clean
 .PHONY : tests/scheduler/CMakeFiles/scheduler_test.dir/clean
+
+#=============================================================================
+# Target rules for target apps/robot_demo/CMakeFiles/robot_demo.dir
+
+# All Build rule for target.
+apps/robot_demo/CMakeFiles/robot_demo.dir/all:
+	$(MAKE) $(MAKESILENT) -f apps/robot_demo/CMakeFiles/robot_demo.dir/build.make apps/robot_demo/CMakeFiles/robot_demo.dir/depend
+	$(MAKE) $(MAKESILENT) -f apps/robot_demo/CMakeFiles/robot_demo.dir/build.make apps/robot_demo/CMakeFiles/robot_demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anansh_andey/workspace/embedded-framework/build/CMakeFiles --progress-num=55,56,57,58,59,60,61,62,63,64,65 "Built target robot_demo"
+.PHONY : apps/robot_demo/CMakeFiles/robot_demo.dir/all
+
+# Build rule for subdir invocation for target.
+apps/robot_demo/CMakeFiles/robot_demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/robot_demo/CMakeFiles/robot_demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anansh_andey/workspace/embedded-framework/build/CMakeFiles 0
+.PHONY : apps/robot_demo/CMakeFiles/robot_demo.dir/rule
+
+# Convenience name for target.
+robot_demo: apps/robot_demo/CMakeFiles/robot_demo.dir/rule
+.PHONY : robot_demo
+
+# clean rule for target.
+apps/robot_demo/CMakeFiles/robot_demo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f apps/robot_demo/CMakeFiles/robot_demo.dir/build.make apps/robot_demo/CMakeFiles/robot_demo.dir/clean
+.PHONY : apps/robot_demo/CMakeFiles/robot_demo.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

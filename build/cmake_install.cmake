@@ -64,6 +64,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/anansh_andey/workspace/embedded-framework/build/examples/logger/logger_formatted/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/anansh_andey/workspace/embedded-framework/build/examples/module_manager/module_registration/cmake_install.cmake")
 endif()
 
@@ -105,6 +110,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("/home/anansh_andey/workspace/embedded-framework/build/tests/scheduler/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/anansh_andey/workspace/embedded-framework/build/apps/robot_demo/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

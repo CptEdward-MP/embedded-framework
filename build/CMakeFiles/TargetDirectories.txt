@@ -13,6 +13,9 @@
 /home/anansh_andey/workspace/embedded-framework/build/tests/logger/CMakeFiles/logger_test.dir
 /home/anansh_andey/workspace/embedded-framework/build/tests/logger/CMakeFiles/edit_cache.dir
 /home/anansh_andey/workspace/embedded-framework/build/tests/logger/CMakeFiles/rebuild_cache.dir
+/home/anansh_andey/workspace/embedded-framework/build/examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir
+/home/anansh_andey/workspace/embedded-framework/build/examples/logger/logger_formatted/CMakeFiles/edit_cache.dir
+/home/anansh_andey/workspace/embedded-framework/build/examples/logger/logger_formatted/CMakeFiles/rebuild_cache.dir
 /home/anansh_andey/workspace/embedded-framework/build/examples/module_manager/module_registration/CMakeFiles/module_registration.dir
 /home/anansh_andey/workspace/embedded-framework/build/examples/module_manager/module_registration/CMakeFiles/edit_cache.dir
 /home/anansh_andey/workspace/embedded-framework/build/examples/module_manager/module_registration/CMakeFiles/rebuild_cache.dir
@@ -40,3 +43,6 @@
 /home/anansh_andey/workspace/embedded-framework/build/tests/scheduler/CMakeFiles/scheduler_test.dir
 /home/anansh_andey/workspace/embedded-framework/build/tests/scheduler/CMakeFiles/edit_cache.dir
 /home/anansh_andey/workspace/embedded-framework/build/tests/scheduler/CMakeFiles/rebuild_cache.dir
+/home/anansh_andey/workspace/embedded-framework/build/apps/robot_demo/CMakeFiles/robot_demo.dir
+/home/anansh_andey/workspace/embedded-framework/build/apps/robot_demo/CMakeFiles/edit_cache.dir
+/home/anansh_andey/workspace/embedded-framework/build/apps/robot_demo/CMakeFiles/rebuild_cache.dir

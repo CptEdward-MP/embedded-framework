@@ -8,11 +8,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/anansh_andey/workspace/embedded-framework/CMakeLists.txt"
+  "/home/anansh_andey/workspace/embedded-framework/apps/robot_demo/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "/home/anansh_andey/workspace/embedded-framework/examples/event_basic/CMakeLists.txt"
   "/home/anansh_andey/workspace/embedded-framework/examples/lipo_battery/lipo_battery_basic/CMakeLists.txt"
   "/home/anansh_andey/workspace/embedded-framework/examples/logger/logger_basic/CMakeLists.txt"
+  "/home/anansh_andey/workspace/embedded-framework/examples/logger/logger_formatted/CMakeLists.txt"
   "/home/anansh_andey/workspace/embedded-framework/examples/module_manager/module_context/CMakeLists.txt"
   "/home/anansh_andey/workspace/embedded-framework/examples/module_manager/module_registration/CMakeLists.txt"
   "/home/anansh_andey/workspace/embedded-framework/examples/scheduler/scheduler_basic/CMakeLists.txt"
@@ -53,6 +55,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "tests/event/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/logger/logger_basic/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/logger/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/logger/logger_formatted/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/module_manager/module_registration/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/module_manager/module_context/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/module_manager/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -62,6 +65,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "tests/time/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/scheduler/scheduler_basic/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/scheduler/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "apps/robot_demo/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -71,6 +75,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/event/CMakeFiles/event_test.dir/DependInfo.cmake"
   "examples/logger/logger_basic/CMakeFiles/logger_basic.dir/DependInfo.cmake"
   "tests/logger/CMakeFiles/logger_test.dir/DependInfo.cmake"
+  "examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/DependInfo.cmake"
   "examples/module_manager/module_registration/CMakeFiles/module_registration.dir/DependInfo.cmake"
   "examples/module_manager/module_context/CMakeFiles/module_context.dir/DependInfo.cmake"
   "tests/module_manager/CMakeFiles/module_manager_test.dir/DependInfo.cmake"
@@ -80,4 +85,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/time/CMakeFiles/time_test.dir/DependInfo.cmake"
   "examples/scheduler/scheduler_basic/CMakeFiles/scheduler_basic.dir/DependInfo.cmake"
   "tests/scheduler/CMakeFiles/scheduler_test.dir/DependInfo.cmake"
+  "apps/robot_demo/CMakeFiles/robot_demo.dir/DependInfo.cmake"
   )

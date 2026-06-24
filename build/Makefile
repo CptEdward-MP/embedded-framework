@@ -182,6 +182,19 @@ logger_test/fast:
 .PHONY : logger_test/fast
 
 #=============================================================================
+# Target rules for targets named logger_formatted
+
+# Build rule for target.
+logger_formatted: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logger_formatted
+.PHONY : logger_formatted
+
+# fast build rule for target.
+logger_formatted/fast:
+	$(MAKE) $(MAKESILENT) -f examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/build.make examples/logger/logger_formatted/CMakeFiles/logger_formatted.dir/build
+.PHONY : logger_formatted/fast
+
+#=============================================================================
 # Target rules for targets named module_registration
 
 # Build rule for target.
@@ -297,6 +310,19 @@ scheduler_test: cmake_check_build_system
 scheduler_test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/scheduler/CMakeFiles/scheduler_test.dir/build.make tests/scheduler/CMakeFiles/scheduler_test.dir/build
 .PHONY : scheduler_test/fast
+
+#=============================================================================
+# Target rules for targets named robot_demo
+
+# Build rule for target.
+robot_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot_demo
+.PHONY : robot_demo
+
+# fast build rule for target.
+robot_demo/fast:
+	$(MAKE) $(MAKESILENT) -f apps/robot_demo/CMakeFiles/robot_demo.dir/build.make apps/robot_demo/CMakeFiles/robot_demo.dir/build
+.PHONY : robot_demo/fast
 
 apps/health_monitor/main.o: apps/health_monitor/main.c.o
 .PHONY : apps/health_monitor/main.o
@@ -456,10 +482,12 @@ help:
 	@echo "... lipo_battery_basic"
 	@echo "... lipo_battery_test"
 	@echo "... logger_basic"
+	@echo "... logger_formatted"
 	@echo "... logger_test"
 	@echo "... module_context"
 	@echo "... module_manager_test"
 	@echo "... module_registration"
+	@echo "... robot_demo"
 	@echo "... scheduler_basic"
 	@echo "... scheduler_test"
 	@echo "... time_basic"
