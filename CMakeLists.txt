@@ -68,6 +68,8 @@ add_subdirectory(
 add_subdirectory(
     tests/logger)
 
+add_subdirectory(
+    examples/logger/logger_formatted)
 
 
 
@@ -117,3 +119,9 @@ add_subdirectory(
 
 add_subdirectory(
     tests/scheduler)
+
+
+
+
+add_subdirectory(
+    apps/robot_demo)

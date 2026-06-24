@@ -10,20 +10,35 @@ void Platform_Write(const char *data)
 }
 
 
-float Platform_ADC_Read(unsigned char channel)
+static float adc_channels[8] =
 {
-    (void)channel;
+    13.5f
+};
 
-    /*
-     * Mock ADC implementation.
-     *
-     * Linux development environment
-     * does not provide a real ADC source.
-     *
-     * Simulated 3S LiPo:
-     * 13.5V total
-     */
-    return 13.5f;
+
+float Platform_ADC_Read(
+    unsigned char channel)
+{
+    if (channel >= 8)
+    {
+        return 0.0f;
+    }
+
+    return adc_channels[channel];
+}
+
+
+void Platform_ADC_SetValue(
+    unsigned char channel,
+    float value)
+{
+    if (channel >= 8)
+    {
+        return;
+    }
+
+    adc_channels[channel] =
+        value;
 }
 
 

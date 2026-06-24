@@ -12,7 +12,7 @@ The logger is not responsible for deciding how logs are displayed, stored, or tr
 
 ## Current Version
 
-Version: Logger V1
+Version: Logger V1.1
 
 Status: Functional
 
@@ -22,31 +22,33 @@ Status: Functional
 
 Application
 
-```
 ↓
-```
 
 Logger API
 
-```
+```c
 Log_Info()
 Log_Warn()
 Log_Error()
+```
 
 ↓
+
+Formatted Message Generation
+
+```c
+vsnprintf()
 ```
+
+↓
 
 log_record_t
 
-```
 ↓
-```
 
 Logger Dispatch
 
-```
 ↓
-```
 
 Platform Output (Temporary)
 
@@ -56,7 +58,7 @@ Platform Output (Temporary)
 
 Current log record:
 
-```
+```c
 timestamp
 level
 message
@@ -64,7 +66,7 @@ message
 
 Example:
 
-```
+```c
 {
     .timestamp = 0,
     .level = LOG_WARN,
@@ -78,7 +80,7 @@ Example:
 
 Supported levels:
 
-```
+```c
 LOG_INFO
 LOG_WARN
 LOG_ERROR
@@ -86,9 +88,39 @@ LOG_ERROR
 
 ---
 
+## Formatted Logging
+
+The logger supports printf-style formatting.
+
+Examples:
+
+```c
+Log_Info("System Started");
+
+Log_Info(
+    "Battery = %.2f V",
+    voltage);
+
+Log_Info(
+    "Encoder = %d",
+    encoder_count);
+
+Log_Warn(
+    "Low Battery %.2f V",
+    voltage);
+```
+
+Formatting is performed inside the Logger Service before records are dispatched.
+
+Applications do not need to manually convert numbers into strings.
+
+---
+
 ## Current Behavior
 
 A log record is created.
+
+The log message is formatted into a string.
 
 The record is immediately dispatched.
 
@@ -102,14 +134,14 @@ No persistent storage exists.
 
 ## Current Limitations
 
-* No log storage.
-* No log history.
-* No ring buffer.
-* No real timestamps.
-* No filtering.
-* No multiple consumers.
-* No thread safety.
-* No dynamic consumer registration.
+* No log storage
+* No log history
+* No ring buffer
+* No real timestamps
+* No filtering
+* No multiple consumers
+* No thread safety
+* No dynamic consumer registration
 
 ---
 
@@ -117,16 +149,17 @@ No persistent storage exists.
 
 Current sink interface:
 
-```
+```c
 typedef struct
 {
-    void (*consume)(const log_record_t *record);
+    void (*consume)(
+        const log_record_t *record);
 } log_sink_t;
 ```
 
 Purpose:
 
-```
+```text
 Allow future consumers to receive log records
 without modifying the logger.
 ```
@@ -149,14 +182,15 @@ Provide:
 
 * Structured log records
 * Log levels
+* Formatted logging
 * Platform-independent output path
 * Consumer extension point
 
 Avoid:
 
 * Storage systems
-* Complex formatting
-* Dynamic infrastructure
+* Complex infrastructure
+* Dynamic registration
 * Premature optimization
 
 ---
@@ -177,6 +211,7 @@ Avoid:
 * Logger creates records.
 * Consumers own behavior.
 * Data and representation are separate.
+* Formatting and transport are separate.
 * Public APIs remain stable.
 * Prefer extension over modification.
 * Keep abstractions minimal.
@@ -187,12 +222,55 @@ Avoid:
 
 Current dependencies:
 
+```text
 Platform Service
+```
 
 Required platform functions:
 
+```c
 Platform_Write()
+```
 
+---
+
+## Platform Independence
+
+The Logger Service does not depend on a specific output mechanism.
+
+Current Linux implementation:
+
+```text
+Logger
+    ↓
+Platform_Write()
+    ↓
+printf()
+```
+
+Future MCU implementation:
+
+```text
+Logger
+    ↓
+Platform_Write()
+    ↓
+UART
+```
+
+or
+
+```text
+Logger
+    ↓
+Platform_Write()
+    ↓
+USB CDC
+```
+
+Only the Platform layer changes.
+
+The Logger API remains unchanged.
 
 ---
 
@@ -200,11 +278,31 @@ Platform_Write()
 
 Current API:
 
-Log_Info()
+```c
+void Log_Info(
+    const char *format,
+    ...);
 
-Log_Warn()
+void Log_Warn(
+    const char *format,
+    ...);
 
-Log_Error()
-
+void Log_Error(
+    const char *format,
+    ...);
+```
 
 ---
+
+## Summary
+
+The Logger Service provides a lightweight and portable logging mechanism for framework applications.
+
+The service currently supports:
+
+* Log Levels
+* Structured Records
+* Formatted Messages
+* Platform-Independent Output
+
+while remaining simple enough to run on Linux and embedded targets with minimal changes.
